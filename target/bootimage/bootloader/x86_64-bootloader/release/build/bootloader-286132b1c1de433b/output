@@ -1,0 +1,7 @@
+cargo:rerun-if-changed=/home/usamah/Documents/making_os/new_os/Cargo.toml
+cargo:rustc-link-search=native=/home/usamah/Documents/making_os/new_os/target/bootimage/bootloader/x86_64-bootloader/release/build/bootloader-286132b1c1de433b/out
+cargo:rustc-link-lib=static=kernel_bin-new_os
+cargo:rerun-if-env-changed=KERNEL
+cargo:rerun-if-env-changed=KERNEL_MANIFEST
+cargo:rerun-if-changed=/home/usamah/Documents/making_os/new_os/target/x86_64-blog_os/debug/new_os
+cargo:rerun-if-changed=build.rs
